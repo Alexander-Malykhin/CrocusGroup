@@ -1,0 +1,25 @@
+[
+    {
+        "success": true,
+        "data": [
+            {
+                "name": "Сотрудник 1",
+                "id": "1",
+                "position": "Разработчик",
+                "avatar": {"path": null}
+            },
+            {
+                "name": "Сотрудник 2",
+                "id": "2",
+                "position": "Маркетолог",
+                "avatar": {"path": null}
+            },
+            {
+                "name": "Сотрудник 3",
+                "id": "3",
+                "position": "SEO",
+                "avatar": {"path": null}
+            }
+        ]
+    }
+]

@@ -1,0 +1,40 @@
+.news {
+    transition: opacity 0.3s ease;
+}
+
+.news__wrapper {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.button.news__loadmore-btn {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+@media (min-width: 560px) {
+    .news__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .news__wrapper {
+        gap: 30px;
+        margin-bottom: 56px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .news__wrapper {
+        gap: 30px 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1440px) {
+    .news__wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

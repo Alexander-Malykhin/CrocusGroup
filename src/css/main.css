@@ -1,0 +1,217 @@
+@keyframes anvil {
+    0% {
+        transform: scale(1) translateY(0px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    1% {
+        transform: scale(0.96) translateY(10px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    100% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+        box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+    }
+}
+
+.full-page {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page-body {
+    padding: 0 0 35px;
+}
+
+.page-home {
+    padding-top: 64px;
+}
+
+.page-block-item,
+.page-list-item {
+    display: block;
+    background: #ffffff;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px 30px;
+    transition: background 0.2s ease;
+}
+
+.page-list-item:hover {
+    background: #fbfbfb;
+}
+
+.page-block__nav-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 20px;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    transition: all 0.2s ease;
+    border-radius: 12px;
+}
+
+.page-block__nav-item span {
+    flex: 0 0 25px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.page-block__nav-item svg {
+    width: auto;
+    height: 20px;
+    color: var(--color_black);
+    transform: scale(1.2);
+}
+
+.page-block__nav-item:hover {
+    background: rgba(174, 183, 194, 0.12);
+}
+
+.page-block__nav-item:active {
+    background: rgba(174, 183, 194, 0.3);
+}
+
+.user-nav__menu button.page-block__nav-item {
+    width: 100%;
+}
+
+.popup-overlay {
+    transition: all 0.3s ease;
+    background: rgb(0, 0, 0, 0.3);
+    padding: 15px;
+}
+
+.modal-common {
+    border-radius: 12px;
+    background: var(--color_white);
+    max-width: 650px;
+    width: 100%;
+}
+
+.modal__header {
+    position: relative;
+    padding-top: 16px;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+.modal-close {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: -35px;
+    right: 0;
+}
+
+.popup-content {
+    -webkit-animation: anvil 0.2s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+    animation: anvil 0.2s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+
+.modal-close span {
+    display: block;
+    height: 25px;
+    width: 25px;
+    position: relative;
+}
+
+.modal-close span::before,
+.modal-close span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: var(--color_white);
+    transition: all 0.3s ease;
+    opacity: 0.5;
+    height: 2px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.modal-close span::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-close span::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal-close:hover span::before,
+.modal-close:hover span::after {
+    opacity: 1;
+}
+
+.modal__body {
+    padding: 16px 25px 10px;
+}
+
+.main-block {
+    margin-bottom: 40px;
+}
+
+.main-block__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-block__header .button {
+    flex-shrink: 0;
+    padding: 8px 16px;
+}
+
+.main-block__title {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 120%;
+    color: var(--color_black);
+}
+
+@media (min-width: 768px) {
+    .main-block__title {
+        font-size: 30px;
+    }
+
+    .main-block__header .button {
+        padding: 10px 20px;
+    }
+
+    .main-block__header {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .page-home .page-body {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .main-block {
+        flex-grow: 1;
+    }
+
+    .page-home__main-content {
+        max-width: 71%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .page-home__main-content {
+        max-width: 75%;
+    }
+}

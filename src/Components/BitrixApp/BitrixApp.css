@@ -1,0 +1,67 @@
+.link-to-app {
+  padding-top: 15px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.link-to-app h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.link-to-app__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.link-to-app__img {
+  display: block;
+  width: fit-content;
+}
+
+.link-to-app__wrapper .image {
+  flex: 0 0 200px;
+  width: 200px;
+}
+
+.how-to {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 400px;
+  margin: 20px auto 0;
+}
+
+.how-to p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color_black);
+  line-height: 120%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.how-to i {
+  font-style: normal;
+  color: var(--color_blue);
+}
+
+.how-to__image {
+  width: 100%;
+  max-width: 320px;
+  height: 500px;
+  border-radius: 12px;
+}
+
+.how-to .how-to__image:last-of-type {
+  height: 650px;
+  width: 300px;
+}

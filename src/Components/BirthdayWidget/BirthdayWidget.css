@@ -1,0 +1,61 @@
+.birthday-widget .aside-block__content {
+    padding: 25px 20px 30px;
+    display: grid;
+    gap: 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 800px;
+}
+
+.birthday-widget__block {
+    display: grid;
+    gap: 15px;
+}
+
+.birthday-widget__block b {
+    display: block;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--color_black);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.birthday-widget__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.birthday-widget__item-body {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: var(--color_black);
+}
+
+.birthday-widget__item-body span {
+    display: block;
+    font-weight: 300;
+    color: #666666;
+    margin-top: 2.5px;
+}
+
+.birthday-widget .aside-block__header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.birthday-widget .aside-block__header span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+}
+
+.birthday-widget .aside-block__header span svg {
+    width: 21px;
+    height: 21px;
+}

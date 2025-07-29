@@ -1,0 +1,123 @@
+.aside-block.quote {
+    border-radius: var(--border-radius);
+    padding: 18px 20px 25px;
+    background: var(--color_white);
+    transition: all 0.2s ease;
+}
+
+.quote__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.quote__header::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: calc(100% - 34px);
+    height: 1px;
+    background: rgba(0, 0, 0, 0.102);
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote__photo {
+    height: 50px;
+    flex: 0 0 50px;
+    border-radius: 20px;
+}
+
+.quote__author {
+    flex-grow: 1;
+}
+
+.quote__author-name {
+    color: var(--color_black);
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.quote__author-activity {
+    color: #a1a7ad;
+    font-size: 12px;
+    line-height: 110%;
+    font-weight: 300;
+    text-wrap: balance;
+}
+
+.quote__body {
+    position: relative;
+}
+
+.quote__image {
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 25px;
+    color: var(--color_blue);
+}
+
+.quote__image svg {
+    height: 30px;
+    width: 25px;
+}
+
+.quote__body .quote__image:first-of-type {
+    top: -15px;
+    left: -15px;
+}
+
+.quote__body .quote__image:last-of-type {
+    transform: rotate(-180deg);
+    bottom: -15px;
+    right: -10px;
+}
+
+.quote__text {
+    color: #a1a7ad;
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 400;
+    padding: 0 5px 0 10px;
+}
+
+@media (min-width: 768px) {
+    .quote__header {
+        gap: 15px;
+    }
+
+    .quote__author-name {
+        font-size: 20px;
+    }
+
+    .quote__text {
+        font-size: 16px;
+        padding: 0 10px 0 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .quote__text {
+        padding: 0 15px 0 20px;
+    }
+
+    .quote__image {
+        height: 37px;
+        width: 32px;
+    }
+
+    .quote__image svg {
+        height: 37px;
+        width: 32px;
+    }
+}

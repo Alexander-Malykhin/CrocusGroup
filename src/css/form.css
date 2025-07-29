@@ -1,0 +1,138 @@
+.form-row {
+    display: grid;
+    align-items: end;
+    gap: 30px;
+    padding: 16px 0;
+}
+
+.form-error {
+    position: relative;
+}
+
+.form-error input,
+.form-error select,
+.form-error textarea {
+    border: 1.5px solid tomato;
+    transition: border 0.15s ease;
+}
+
+.error-span {
+    position: absolute;
+    color: tomato;
+    font-size: 12px;
+    bottom: -15px;
+    left: 5px;
+    width: 100%;
+    transition: opacity 0.15s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-error .error-span {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-select,
+.form-textarea,
+.form-input {
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333 !important;
+    background: var(--color-gray-new);
+    padding: 0 14px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    width: 100%;
+    max-width: 100%;
+}
+
+.form-select {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+    background-image: url("../../img/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 6px) 50%;
+    background-size: 28px;
+    padding: 0 40px 0 14px;
+    cursor: pointer;
+}
+
+.form-select::placeholder,
+.form-textarea::placeholder,
+.form-input::placeholder {
+    overflow: visible;
+}
+
+.form-field_teaxtarea {
+    grid-column: -1 / 1;
+}
+
+.form-textarea {
+    padding: 12px;
+    resize: none;
+}
+
+.form-select,
+.form-input {
+    height: 46px;
+}
+
+.form-label {
+    color: var(--color_black);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+    padding-bottom: 15px;
+    padding-left: 4px;
+}
+
+.form-sublabel {
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 120%;
+    border-top: 1.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-checkbox input {
+    height: 15px;
+    flex: 0 0 15px;
+}
+
+.form-subtitle {
+    color: var(--color-black);
+    padding-top: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+}
+
+@media (min-width: 786px) {
+    .form-row:not(.form-row_full) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-row_full {
+        gap: 15px;
+    }
+
+    .form-label {
+        font-size: 16px;
+    }
+}
