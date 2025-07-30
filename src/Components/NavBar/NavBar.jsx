@@ -25,7 +25,7 @@ function NavBar() {
         postData("POST", `${import.meta.env.VITE_API_URL}logout/`, { id })
             .then((response) => response)
             .then((json) => {
-                if (json.success == true) {
+                if (json.success === true) {
                     clearAll();
                     window.location.replace("/");
                 }
@@ -227,6 +227,25 @@ function NavBar() {
                             </span>
                             Компания
                             <Tooltip id="tooltip-about" />
+                        </NavLink>
+
+                        <NavLink
+                            to={"/welcome"}
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "navbar__list-item active"
+                                    : "navbar__list-item"
+                            }
+                            title="Для сотрудников"
+                            data-tooltip-id="tooltip-corporate"
+                            data-tooltip-content="Для сотрудников"
+                            data-tooltip-place="right"
+                        >
+                            <span>
+                               <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 26C6.59 26 1 20.4 1 13.5C1 6.59 6.59 1 13.5 1C20.4 1 26 6.59 26 13.5C26 20.4 20.4 26 13.5 26Z" stroke="#666666" strokeWidth="2" strokeLinejoin="round"/><path d="M13.5 18.5L13.5 13.5" stroke="#666666" strokeOpacity="1" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round"/><path  d="M13.5 8.5L13.51 8.5" stroke="#666666" strokeOpacity="1" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round"/></svg>
+                            </span>
+                            Для сотрудников
+                            <Tooltip id="tooltip-corporate"/>
                         </NavLink>
 
                         <button

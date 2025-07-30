@@ -25,6 +25,10 @@ import About from "./Components/About/About";
 import RecommendationsPage from "./Components/Recommendations/RecommendationsPage";
 import BitrixApp from "./Components/BitrixApp/BitrixApp";
 import { UserProvider } from "./Components/UserProvider";
+//news
+import WelcomeBar from "./Components/WelcomeBar/WelcomeBar.jsx";
+import WelcomeLayout from "./Components/WelcomeLayout/WelcomeLayout.jsx";
+import WelcomeAbout from "./Components/WelcomeAbout/WelcomeAbout.jsx";
 
 function App() {
     return (
@@ -110,6 +114,14 @@ function App() {
                         <Route path="about" element={<About />} />
 
                         <Route path="bitrixapp" element={<BitrixApp />} />
+
+                        <Route path='welcome'>
+                            <Route index element={<WelcomeBar/>}/>
+
+                            <Route element={<WelcomeLayout/>}>
+                                <Route  path='about' element={<WelcomeAbout/>}/>
+                            </Route>
+                        </Route>
                     </Route>
                 </Routes>
 

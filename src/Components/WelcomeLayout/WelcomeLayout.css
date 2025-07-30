@@ -1,0 +1,13 @@
+.layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.layout__content {
+    grid-column: span 9;
+}
+
+.layout__sidebar {
+    grid-column: span 3;
+}
