@@ -26,9 +26,16 @@ import RecommendationsPage from "./Components/Recommendations/RecommendationsPag
 import BitrixApp from "./Components/BitrixApp/BitrixApp";
 import { UserProvider } from "./Components/UserProvider";
 //news
-import WelcomeBar from "./Components/WelcomeBar/WelcomeBar.jsx";
+import WelcomeBarPage from "./pages/WelcomeBarPage/WelcomeBarPage.jsx";
 import WelcomeLayout from "./Components/WelcomeLayout/WelcomeLayout.jsx";
-import WelcomeAbout from "./Components/WelcomeAbout/WelcomeAbout.jsx";
+import WelcomeAbout from "./pages/WelcomeAbout/WelcomeAbout.jsx";
+import WelcomeOnboarding from "./pages/WelcomeOnbording/WelcomeOnboarding.jsx";
+import WelcomePersonnel from "./pages/WelcomePersonnel/WelcomePersonnel.jsx";
+import WelcomeSecurity from "./pages/WelcomeSecurity/WelcomeSecurity.jsx";
+import WelcomeInformationChannel from './pages/WelcomeInformationChannel/WelcomeInformationChannel.jsx'
+import WelcomeBenefits from "./pages/WelcomeBenefits/WelcomeBenefits.jsx";
+import WelcomeContacts from "./pages/WelcomeContacts/WelcomeContacts.jsx";
+import WelcomeLife from "./pages/WelcomeLife/WelcomeLife.jsx";
 
 function App() {
     return (
@@ -116,10 +123,17 @@ function App() {
                         <Route path="bitrixapp" element={<BitrixApp />} />
 
                         <Route path='welcome'>
-                            <Route index element={<WelcomeBar/>}/>
+                            <Route index element={<WelcomeBarPage/>}/>
 
                             <Route element={<WelcomeLayout/>}>
                                 <Route  path='about' element={<WelcomeAbout/>}/>
+                                <Route  path='onboarding' element={<WelcomeOnboarding/>}/>
+                                <Route  path='personnel' element={<WelcomePersonnel/>}/>
+                                <Route  path='security' element={<WelcomeSecurity/>}/>
+                                <Route  path='informationChannel' element={<WelcomeInformationChannel/>}/>
+                                <Route  path='benefits' element={<WelcomeBenefits/>}/>
+                                <Route  path='life' element={<WelcomeLife/>}/>
+                                <Route  path='contacts' element={<WelcomeContacts/>}/>
                             </Route>
                         </Route>
                     </Route>

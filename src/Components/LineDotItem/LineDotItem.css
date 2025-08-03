@@ -1,0 +1,27 @@
+.line__marker {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 5px 1fr;
+    gap: 12px;
+}
+
+.line__marker-dot {
+    position: relative;
+    background-color:var(--color_blue);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 8px;
+}
+
+.card__subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    transition: 0.3s all ease-in-out;
+    cursor: default;
+    color: var(--color_black);
+    white-space: pre-line;
+    word-break: break-word;
+    display: inline-block;
+    line-height: 19px;
+}
