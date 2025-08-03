@@ -22,7 +22,7 @@ export const cardListArray = [
     },
     {
         id: 2,
-        title: 'Онбординг \nнового сотрудника',
+        title: 'Онбординг нового сотрудника',
         image: cardImage2,
         imageClass: 'welcome__card-image-2',
         list: [
@@ -33,7 +33,7 @@ export const cardListArray = [
     },
     {
         id: 3,
-        title: 'Кадровые процедуры \n и выплата зп',
+        title: 'Кадровые процедуры и выплата зп',
         image: cardImage3,
         imageClass: 'welcome__card-image-3',
         list: [
@@ -90,7 +90,7 @@ export const cardListArray = [
     },
     {
         id: 8,
-        title: 'Ключевые\nконтакты',
+        title: 'Ключевые \n контакты',
         image: cardImage8,
         imageClass: 'welcome__card-image-8',
         list: [
