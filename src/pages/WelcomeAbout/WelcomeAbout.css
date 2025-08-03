@@ -1,0 +1,187 @@
+.welcome__about-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.welcome__about-company {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 38px;
+}
+
+.welcome__about-company-wrapper {
+    width: 100%;
+    max-width: 350px;
+    justify-self: center;
+}
+
+.welcome__about-company-image {
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.welcome__about-company-person {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.welcome__about-company-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.welcome__about-mission {
+    padding: 25px 16px;
+    width: 100%;
+}
+
+.welcome__about-values {
+    padding: 25px 16px;
+    width: 100%;
+}
+
+.welcome__about-values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.welcome__about-values-item {
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+}
+
+.welcome__about-values-item-image {
+    width: 25px;
+    height: auto;
+}
+
+.welcome__about-values-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    gap: 10px;
+}
+
+.welcome__about-activity {
+    padding-bottom: 55px;
+}
+
+.welcome__about-activity-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome__about-activity-item {
+    padding: 22px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: url("../../assets/cursor.png"), pointer;
+    transition: 0.3s ease-in-out;
+    color: var(--color_black);
+}
+
+.welcome__about-activity-item:hover {
+    background: rgb(243, 250, 255);
+}
+
+.welcome__about-activity-item-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.welcome__about-activity-item-index {
+    color: var(--color_blue);
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.welcome__about-activity-item-arrow {
+    max-width: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.welcome__about-activity-item-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .welcome__about-mission {
+        padding: 27px 58px 36px 52px;
+        width: 100%;
+    }
+
+    .welcome__about-activity-item-wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .welcome__about-values {
+        padding: 38px 50px 56px 52px;
+    }
+
+    .welcome__about-company {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome__about-company-wrapper {
+        max-width: 280px;
+    }
+
+    .welcome__about-company-person {
+        flex-direction: row;
+    }
+
+    .welcome__about-activity-item {
+        padding: 22px 22px 22px 52px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: url("../../assets/cursor.png"), pointer;
+        transition: 0.3s ease-in-out;
+        color: var(--color_black);
+    }
+}
+
+@media (min-width: 1024px) {
+    .welcome__about-company {
+        grid-template-columns: minmax(0, 280px) 1fr;
+    }
+
+    .welcome__about-company-wrapper {
+        justify-self: start;
+    }
+
+    .welcome__about-company-person {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1280px) {
+    .welcome__about-company {
+        grid-template-columns: 350px 1fr;
+    }
+
+    .welcome__about-company-wrapper {
+        max-width: 350px;
+    }
+}

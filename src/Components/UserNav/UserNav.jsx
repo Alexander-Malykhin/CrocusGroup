@@ -6,6 +6,7 @@ import { useUser } from "../UserProvider";
 import Avatar from "../Avatar/Avatar";
 
 import "./UserNav.css";
+import {Tooltip} from "react-tooltip";
 
 function UserNav() {
     const { getItem, clearAll } = useLocalStorage();
@@ -262,6 +263,7 @@ function UserNav() {
                             Справочник компании
                         </NavLink>
                     </li>
+
                     <li>
                         <NavLink
                             to={"/about"}
@@ -272,6 +274,19 @@ function UserNav() {
                                 <svg width="18" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#prefix__clip0_4_2)"><path fillRule="evenodd" clipRule="evenodd" d="M8.1 0c1.491 0 2.7.95 2.7 2.688v1.227c.282-.115.584-.178.9-.178h3.6c1.491 0 2.7 1.409 2.7 3.148v10.492C18 19.116 16.791 20 15.3 20H2.7C1.209 20 0 19.116 0 17.377V2.687C0 .95 1.209 0 2.7 0h5.4zm0 1.638H2.7c-.497 0-1.2.47-1.2 1.05v14.689c0 .58.703 1.05 1.2 1.05h6.8V2.686c0-.579-.903-1.049-1.4-1.049zm7.2 3.7h-3.6c-.497 0-1.2.967-1.2 1.547v11.541h4.8c.497 0 1.2-.47 1.2-1.05V6.886c0-.58-.703-1.548-1.2-1.548zm-9 6.793c.497 0 .9.47.9 1.049 0 .58-.403 1.05-.9 1.05H4.5c-.497 0-.9-.47-.9-1.05 0-.58.403-1.05.9-1.05h1.8zm8.1 0c.497 0 .9.47.9 1.049 0 .58-.403 1.05-.9 1.05h-1.8c-.497 0-.9-.47-.9-1.05 0-.58.403-1.05.9-1.05h1.8zM6.3 7.934c.497 0 .9.47.9 1.049 0 .58-.403 1.05-.9 1.05H4.5c-.497 0-.9-.47-.9-1.05 0-.58.403-1.05.9-1.05h1.8zm8.1 0c.497 0 .9.47.9 1.049 0 .58-.403 1.05-.9 1.05h-1.8c-.497 0-.9-.47-.9-1.05 0-.58.403-1.05.9-1.05h1.8zM6.3 3.737c.497 0 .9.47.9 1.05 0 .578-.403 1.048-.9 1.048H4.5c-.497 0-.9-.47-.9-1.049 0-.58.403-1.05.9-1.05h1.8z" fill="currentColor"/></g></svg>
                             </span>
                             Компания
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to={"/welcome"}
+                            className="page-block__nav-item"
+                            title="Для сотрудников"
+                        >
+                            <span>
+                               <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 26C6.59 26 1 20.4 1 13.5C1 6.59 6.59 1 13.5 1C20.4 1 26 6.59 26 13.5C26 20.4 20.4 26 13.5 26Z" stroke="#666666" strokeWidth="2" strokeLinejoin="round"/><path d="M13.5 18.5L13.5 13.5" stroke="#666666" strokeOpacity="1" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round"/><path  d="M13.5 8.5L13.51 8.5" stroke="#666666" strokeOpacity="1" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round"/></svg>
+                            </span>
+                            Для сотрудников
+                            <Tooltip id="tooltip-corporate"/>
                         </NavLink>
                     </li>
                     <li>

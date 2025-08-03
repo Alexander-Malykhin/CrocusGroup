@@ -1,0 +1,38 @@
+.welcome__page-layout {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.welcome__page-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.welcome__page-header {
+    padding: 25px 16px;
+}
+
+.welcome__page-span {
+    width: 2px;
+    height: 25px;
+    background-color: var(--color_blue);
+    border-radius: 100px;
+}
+
+.welcome__page-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (min-width: 768px) {
+    .welcome__page-header {
+        padding: 38px 52px;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .welcome__page-header {
+        padding: 52px 38px 52px 52px;
+    }
+}

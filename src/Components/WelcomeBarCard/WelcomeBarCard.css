@@ -1,0 +1,49 @@
+.card {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-height: 420px;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.card__header {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 22px 33px;
+}
+
+.card__content {
+    padding: 29px 33px;
+    flex-grow: 1;
+}
+
+.card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.card__title {
+    font-size: 30px;
+    font-weight: 300;
+    white-space: pre-line;
+    word-break: break-word;
+    line-height: 36px
+}
+
+.card__subtitle:hover {
+    cursor: url("../../assets/cursor.png"), pointer;
+    color: var(--color_blue);
+    font-weight: 500;
+}
+
+.card__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

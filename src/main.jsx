@@ -7,6 +7,8 @@ import "./css/variables.css";
 import "./css/index.css";
 import "./css/form.css";
 import "./css/popup.css";
+//news
+import "./css/settings/fonts.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
