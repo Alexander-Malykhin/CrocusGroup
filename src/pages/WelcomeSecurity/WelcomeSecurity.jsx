@@ -6,8 +6,8 @@ import {
     workPlaceArrayList,
     fraudArrayList
 } from './securityListArrays.js'
-import WelcomeSection from "../../Components/WelcomeSection/WelcomeSection.jsx";
-import LineDotItem from "../../Components/LineDotItem/LineDotItem.jsx";
+import WelcomeSection from "@components/WelcomeSection/WelcomeSection.jsx";
+import LineDotItem from "@components/LineDotItem/LineDotItem.jsx";
 import './WelcomeSecurity.css'
 
 const WelcomeSecurity = () => {

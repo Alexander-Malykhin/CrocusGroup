@@ -1,7 +1,7 @@
 import {useLocation} from "react-router-dom";
 import {useEffect} from "react";
 import {actionsArrayList, chartArrayList, vacationArrayList} from "./personnelArrayLists.js";
-import WelcomeSection from "../../Components/WelcomeSection/WelcomeSection.jsx";
+import WelcomeSection from "@components/WelcomeSection/WelcomeSection.jsx";
 import informationImage from "@assets/welcome/information.png";
 
 import './WelcomePersonnel.css'

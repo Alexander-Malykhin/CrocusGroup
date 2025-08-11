@@ -1,13 +1,16 @@
 import './LineDotItem.css'
 import {Link} from "react-router-dom";
 
-// eslint-disable-next-line react/prop-types
+
 const LineDotItem = ({description, flag = false, link = null,text = null}) => {
+
+    const textWithBreaks = (text || '').replace(/\\n/g, '\n');
+
     return (
         flag ?
             <Link className='line__marker' to={`${link}`}>
                 <span className='line__marker-dot'></span>
-                <p className='card__subtitle'>{text}</p>
+                <p className='card__subtitle'>{textWithBreaks}</p>
             </Link>
             :
             <div className='line__marker'>

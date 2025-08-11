@@ -95,7 +95,7 @@ const Profile = () => {
     };
 
     useEffect(() => {
-        if (import.meta.env.DEV) {
+        if (import.meta.env.DEV || import.meta.env.VITE_STAGE) {
             setUserData({
                 details: [
                     { name: "Дата рождения", value: "19.11.1997" },

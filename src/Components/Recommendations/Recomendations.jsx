@@ -29,7 +29,7 @@ function Recomendations() {
   };
 
   useEffect(() => {
-    if (import.meta.env.DEV) {
+    if (import.meta.env.DEV || import.meta.env.VITE_STAGE) {
       postData("POST", import.meta.env.VITE_NEWS_API_URL, {})
         .then((response) => response)
         .then((json) => {

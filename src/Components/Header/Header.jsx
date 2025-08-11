@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import UserNav from "../UserNav/UserNav";
 import Weather from "../Weather/Weather";
 import { UserProvider } from "../UserProvider";
-import "./Header.css";
 import logo from "../../assets/logo-35.svg";
+
+import "./Header.css";
 
 function Header() {
   return (

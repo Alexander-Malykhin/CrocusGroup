@@ -16,7 +16,7 @@ const Quote = () => {
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        if (import.meta.env.DEV) {
+        if (import.meta.env.DEV || import.meta.env.VITE_STAGE) {
             setIsLoading(false);
         } else {
             getData(`${import.meta.env.VITE_API_URL}cites/`, {

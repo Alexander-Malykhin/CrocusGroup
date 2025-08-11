@@ -1,7 +1,7 @@
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {useLocation} from "react-router-dom";
 import {valuesArrayList, activityArrayList} from "./valuesArrayContent.js";
-import WelcomeSection from "../../Components/WelcomeSection/WelcomeSection.jsx";
+import WelcomeSection from "@components/WelcomeSection/WelcomeSection.jsx";
 import aboutImage from "@assets/about/about-2.jpeg";
 import checkMarkImage from "@assets/welcome/check-mark.svg";
 import arrowImage from "@assets/welcome/arrow.svg";

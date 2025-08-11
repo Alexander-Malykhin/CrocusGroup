@@ -26,8 +26,8 @@ import RecommendationsPage from "./Components/Recommendations/RecommendationsPag
 import BitrixApp from "./Components/BitrixApp/BitrixApp";
 import { UserProvider } from "./Components/UserProvider";
 //news
-import WelcomeBarPage from "./pages/WelcomeBarPage/WelcomeBarPage.jsx";
 import WelcomeLayout from "./Components/WelcomeLayout/WelcomeLayout.jsx";
+import WelcomeBarPage from "./pages/WelcomeBarPage/WelcomeBarPage.jsx";
 import WelcomeAbout from "./pages/WelcomeAbout/WelcomeAbout.jsx";
 import WelcomeOnboarding from "./pages/WelcomeOnbording/WelcomeOnboarding.jsx";
 import WelcomePersonnel from "./pages/WelcomePersonnel/WelcomePersonnel.jsx";

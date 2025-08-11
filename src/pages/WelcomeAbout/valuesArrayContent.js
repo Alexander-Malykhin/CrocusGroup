@@ -60,7 +60,7 @@ export const activityArrayList = [
     {
         id: 6,
         index: '06',
-        title: 'Благотворительность',
-        link:'#'
+        title: 'Концерты и развлечения',
+        link:'https://crocusgroup.ru/projects/concerts-and-entertainment/'
     }
 ]

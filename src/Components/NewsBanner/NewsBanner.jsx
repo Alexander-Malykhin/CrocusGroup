@@ -12,7 +12,7 @@ function NewsBanner() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if (import.meta.env.DEV) {
+    if (import.meta.env.DEV || import.meta.env.VITE_STAGE) {
       postData("POST", import.meta.env.VITE_NEWS_API_URL, {})
         .then((response) => response)
         .then((json) => {
@@ -20,7 +20,8 @@ function NewsBanner() {
         })
         .catch((error) => setError(error.message))
         .finally(() => setIsLoading(false));
-    } else {
+    }
+    else {
       getData(`${import.meta.env.VITE_API_URL}news/?limit=6`, { Accept: "application/json" })
         .then((response) => response.json())
         .then((json) => {

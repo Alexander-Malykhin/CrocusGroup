@@ -28,7 +28,7 @@ const Documents = () => {
     const debounce = createDebounce(handleFilter, 300, true);
 
     useEffect(() => {
-        if (import.meta.env.DEV) {
+        if (import.meta.env.DEV ) {
             postData("POST", "../../../src/data/docs.json", {})
                 .then((response) => response[0])
                 .then((json) => {
@@ -38,7 +38,19 @@ const Documents = () => {
                     }
                 })
                 .finally(() => setIsLoading(false));
-        } else {
+        }
+        else if (import.meta.env.VITE_STAGE) {
+            postData("POST", import.meta.env.VITE_DOCS_API_URL, {})
+                .then((response) => response[0])
+                .then((json) => {
+                    if (json.success == true) {
+                        setDocs(json.data);
+                        setFilteredList(json.data);
+                    }
+                })
+                .finally(() => setIsLoading(false));
+        }
+        else {
             getData(`${import.meta.env.VITE_API_URL}/docs`, {
                 Accept: "application/json",
             })
