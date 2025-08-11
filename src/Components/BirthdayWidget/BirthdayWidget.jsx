@@ -34,7 +34,19 @@ const BirthdayWidget = () => {
           }
         })
         .finally(() => setIsLoading(false));
-    } else {
+    }
+    else if (import.meta.env.VITE_STAGE) {
+      postData("POST", import.meta.env.VITE_USERS_API_URL, {})
+          .then((response) => response[0])
+          .then((json) => {
+            if (json.success == true) {
+              setTodayBirthdayPeople(json.data);
+              setTomorrowBirthdayPeople(json.data);
+            }
+          })
+          .finally(() => setIsLoading(false));
+    }
+    else {
       getData(`${import.meta.env.VITE_API_URL}users/?birthday=${currentDate}`, {
         Accept: "application/json",
       })

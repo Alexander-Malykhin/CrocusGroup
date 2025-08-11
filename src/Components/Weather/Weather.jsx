@@ -61,9 +61,10 @@ const Weather = () => {
     const currentMonth = monthsOfYear[today.getMonth()];
 
     useEffect(() => {
-        if (import.meta.env.DEV) {
+        if (import.meta.env.DEV || import.meta.env.VITE_STAGE) {
             setIsLoaded(true);
-        } else {
+        }
+        else {
             if ("geolocation" in navigator) {
                 navigator.geolocation.getCurrentPosition(
                     function (position) {

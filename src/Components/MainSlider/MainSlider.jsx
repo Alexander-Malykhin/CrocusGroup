@@ -16,9 +16,10 @@ const MainSlider = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        if (import.meta.env.DEV) {
+        if (import.meta.env.DEV || import.meta.env.VITE_STAGE) {
             setIsLoading(false);
-        } else {
+        }
+        else {
             getData(`${import.meta.env.VITE_API_URL}slider/`, { Accept: "application/json" })
             .then((response) => response.json())
             .then((json) => {

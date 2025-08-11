@@ -1,6 +1,6 @@
 import {useLocation} from "react-router-dom";
 import {useEffect} from "react";
-import WelcomeSection from "../../Components/WelcomeSection/WelcomeSection.jsx";
+import WelcomeSection from "@components/WelcomeSection/WelcomeSection.jsx";
 import benefitsImage from '@assets/welcome/benefits.png'
 
 import './WelcomeBenefits.css'

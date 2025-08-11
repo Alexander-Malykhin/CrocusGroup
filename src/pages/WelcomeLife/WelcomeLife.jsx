@@ -1,8 +1,8 @@
 import {useLocation} from "react-router-dom";
 import {useEffect} from "react";
 import {dressCodeArrayList, dinnerArrayList, workLifeArrayList} from './lifeArraysLists.js'
-import WelcomeSection from "../../Components/WelcomeSection/WelcomeSection.jsx";
-import LineDotItem from "../../Components/LineDotItem/LineDotItem.jsx";
+import WelcomeSection from "@components/WelcomeSection/WelcomeSection.jsx";
+import LineDotItem from "@components/LineDotItem/LineDotItem.jsx";
 import mapImage from '@assets/welcome/map.png'
 
 

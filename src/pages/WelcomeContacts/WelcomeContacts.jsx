@@ -1,8 +1,8 @@
 import {useLocation} from "react-router-dom";
 import {useEffect} from "react";
 import {contactsArrayList} from "./contactsArrayList.js";
-import WelcomeSection from "../../Components/WelcomeSection/WelcomeSection.jsx";
-import ContactsLine from "../../Components/ContactsLine/ContactsLine.jsx";
+import WelcomeSection from "@components/WelcomeSection/WelcomeSection.jsx";
+import ContactsLine from "@components/ContactsLine/ContactsLine.jsx";
 import './WelcomeContacts.css'
 
 const WelcomeContacts = () => {

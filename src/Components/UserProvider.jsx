@@ -1,11 +1,12 @@
-import { createContext, useContext, useState, useEffect } from "react";
-import { useLocalStorage } from "../utils/helpers/useLocalStorage";
+import {createContext, useContext, useState, useEffect} from "react";
+import {useLocalStorage} from "../utils/helpers/useLocalStorage";
 import getData from "../utils/helpers/getData";
+
 const UserContext = createContext();
 
-export const UserProvider = ({ children }) => {
+export const UserProvider = ({children}) => {
     const [userData, setUserData] = useState(null);
-    const { setItem, getItem, removeItem } = useLocalStorage();
+    const {setItem, getItem, removeItem} = useLocalStorage();
 
     const colors = [
         "linear-gradient(-45deg, #1fd1f9, #b621fe)",
@@ -20,13 +21,13 @@ export const UserProvider = ({ children }) => {
 
     useEffect(() => {
         if (!getItem("user")) {
-            if (import.meta.env.DEV) {
+            if (import.meta.env.DEV || import.meta.env.VITE_STAGE) {
                 setUserData({
                     email: "user@crocusgroup.ru",
                     name: "User",
                     surname: "Unknown",
                     second_name: "",
-                    avatar: { path: null },
+                    avatar: {path: null},
                 });
             } else {
                 getData(
@@ -59,7 +60,7 @@ export const UserProvider = ({ children }) => {
     };
 
     return (
-        <UserContext.Provider value={{ userData, updateUserData }}>
+        <UserContext.Provider value={{userData, updateUserData}}>
             {children}
         </UserContext.Provider>
     );

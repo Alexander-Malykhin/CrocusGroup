@@ -23,7 +23,7 @@ const Notification = () => {
   };
 
   useEffect(() => {
-    if (import.meta.env.DEV) {
+    if (import.meta.env.DEV || import.meta.env.VITE_STAGE) {
       setNotificationData({
         desc: "<b>15 июля 2024</b> - Появилась фукнция загрузки своего фото. Для этого нужно перейти в свой <a href='/profile' class='link'>профиль</a> и нажать на кружок с инициалами. </br> - Виджет погоды стал более информативным",
         name: "Обновление портала",

@@ -4,10 +4,18 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  let base = '/';
+  let base = '';
 
-  if (mode === 'production' || mode === 'staging') {
-    base = '/im/';
+  switch (mode) {
+    case 'staging':
+      base = 'im/dist/';
+      break;
+    case 'production':
+      base = 'im/';
+      break;
+    default:
+      base = '/';
+      break;
   }
 
   return {
@@ -21,10 +29,10 @@ export default defineConfig(({ mode }) => {
             if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
               extType = "img";
             }
-            return `assets/${extType}/[name]-[hash][extname]`;
+            return `assets/${extType}/[name][extname]`;
           },
-          chunkFileNames: "assets/js/[name]-[hash].js",
-          entryFileNames: "assets/js/[name]-[hash].js",
+          chunkFileNames: "assets/js/[name].js",
+          entryFileNames: "assets/js/[name].js",
         },
       },
     },

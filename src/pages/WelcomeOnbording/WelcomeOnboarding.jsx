@@ -1,6 +1,6 @@
 import {onboardingListArray} from './onboardingArrayList.js'
-import WelcomeSection from "../../Components/WelcomeSection/WelcomeSection.jsx";
-import LineDotItem from "../../Components/LineDotItem/LineDotItem.jsx";
+import WelcomeSection from "@components/WelcomeSection/WelcomeSection.jsx";
+import LineDotItem from "@components/LineDotItem/LineDotItem.jsx";
 import './WelcomeOnboarding.css'
 
 const WelcomeOnboarding = () => {
