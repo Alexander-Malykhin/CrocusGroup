@@ -1,0 +1,86 @@
+.aside-block.updates {
+    background: linear-gradient(90deg, #f57b63, #ee5e9f);
+    box-shadow: var(--block-shadow);
+    color: var(--color_white);
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    opacity: 0.75;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside-block.updates span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 30px;
+    height: 30px;
+}
+
+.aside-block.updates:hover span path {
+    transition: transform 0.2s ease;
+}
+
+.aside-block.updates:hover span path {
+    transform: translateY(1.5px);
+}
+
+.aside-block.updates span svg {
+    height: 30px;
+    width: 30px;
+}
+
+.aside-block.updates:hover {
+    opacity: 0.85;
+}
+
+.notification .aside-block__content {
+    padding: 15px 20px 20px;
+    color: var(--color_black);
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.notification .aside-block__content a {
+    color: var(--color_blue);
+}
+
+.notification .aside-block__header {
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.updates-popup .popup__close-btn {
+    margin-bottom: 5px;
+}
+
+.updates-popup .popup__wrapper {
+    max-width: 600px;
+}
+
+.updates-popup .popup__body {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+.updates-popup .popup__body b {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.updates-popup .popup__body b:not(:first-of-type) {
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 2px solid #eeeeee;
+}

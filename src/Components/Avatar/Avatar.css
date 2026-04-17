@@ -1,0 +1,9 @@
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color_white);
+    border-radius: 50%;
+    background: rgba(0, 63, 108, 0.2);
+    text-transform: uppercase;
+}

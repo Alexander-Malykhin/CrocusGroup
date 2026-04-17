@@ -1,0 +1,33 @@
+[
+    {
+        "success": true,
+        "data": [
+            {
+                "name": "Картинка",
+                "url": "/docs/1",
+                "ext": "png"
+            },
+            {
+                "name": "Документ",
+                "url": "/docs/2",
+                "ext": "doc"
+            },
+            {
+                "name": "PDF",
+                "url": "/docs/3",
+                "ext": "pdf"
+            },
+            {
+                "name": "Таблица",
+                "url": "/docs/4",
+                "ext": "xls"
+            },
+            {
+                "name": "Перезентация",
+                "url": "/docs/5",
+                "ext": "ppt"
+            }
+        ]
+    }
+] 
+

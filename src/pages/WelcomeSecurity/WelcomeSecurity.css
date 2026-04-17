@@ -1,0 +1,13 @@
+.welcome__security-layout {
+    padding: 33px 55px 44px 52px;
+}
+
+.welcome__security-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link__security {
+    color: var(--color_blue);
+}
